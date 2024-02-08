@@ -1,0 +1,25 @@
+/* .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+   */
+.form {
+    background-color: gray;
+    width: 500px;
+    margin: 25px auto;
+    padding: 10px;
+    border: 1px solid salmon;
+    border-radius: 10px;
+}
+
+.example-full-width {
+    margin: 0px 63px;
+    width: 75%;
+}
+button{
+    margin : auto 192px;
+}
+.res{
+font-size: medium;
+}
