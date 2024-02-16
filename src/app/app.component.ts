@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { profile } from './model/profile.model';
+import { Profile } from './model/profile.model';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +9,9 @@ import { profile } from './model/profile.model';
 export class AppComponent {
   title = 'learning-angular';
   
-  storedProfile: profile[]=[];
+  storedProfile: Profile[]=[];
 
-  addProfile(p:profile){
+  addProfile(p:Profile){
     this.storedProfile.push(p) 
   }
 }

@@ -15,7 +15,9 @@ import { AppComponent } from './app.component';
 import { InputComponent } from './components/input/input.component';
 import { ListProfileComponent } from './components/list-profile/list-profile.component';
 import { PostProfileComponent } from './components/post-profile/post-profile.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     InputComponent,
     ListProfileComponent,
-    PostProfileComponent
+    PostProfileComponent,
+    ReactiveFormComponent
   ],
   imports: [
     FormsModule,
@@ -34,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatButtonModule,
     MatExpansionModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration(),

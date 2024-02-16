@@ -1,4 +1,5 @@
-export interface profile{
+export interface Profile{
+	id? : null,
     userName: string;
     userContent: string;
 }
