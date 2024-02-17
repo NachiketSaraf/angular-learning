@@ -1,0 +1,16 @@
+<div class="form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Favorite food</mat-label>
+        <input matInput placeholder="Ex. Pizza" #foodInput>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..." #foodComments></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button (click)="showData(foodInput,foodComments)" color="accent">Accent</button>
+    <div class="res">
+        result : {{foodName}} {{foodComment}}
+    </div>
+</div>

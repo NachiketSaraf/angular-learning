@@ -1,0 +1,19 @@
+.box {
+    background-color: gray;
+    width: 600px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+  }
+  h2 {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+  }
+  .example-full-width {
+    width: 100%;
+  }
+  .btn {
+    padding: 10px 50px;
+  }

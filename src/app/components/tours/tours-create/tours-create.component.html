@@ -1,0 +1,40 @@
+<div class="container">
+    <form #tourForm="ngForm" (ngSubmit)="onSubmit(tourForm)">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <label for="duration">Duration (in days):</label>
+            <input type="number" id="duration" name="duration" class="form-control" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <label for="maxGroupSize">Max Group Size:</label>
+            <input type="number" id="maxGroupSize" name="maxGroupSize" class="form-control" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <label for="difficulty">Difficulty:</label>
+            <input type="text" id="difficulty" name="difficulty" class="form-control" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" class="form-control" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <label for="summary">Summary:</label>
+            <textarea id="summary" name="summary" class="form-control" ngModel required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="imageCover">Image Cover URL:</label>
+            <input type="text" id="imageCover" name="imageCover" class="form-control" ngModel required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

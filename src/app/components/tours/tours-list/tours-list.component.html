@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="heading">
+    <h1>List Of Products</h1>
+    <button type="button" class="btn btn-primary" [routerLink]="['/tour-create']">Create</button>
+
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Sr No.</th>
+        <th scope="col">Title</th>
+        <th scope="col">Summary</th>
+        <th scope="col">Price</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of tourArr, let i = index  ">
+      <tr>
+        <th scope="row">{{i+1}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.summary}}</td>
+        <td>{{item.price}}</td>
+        <td>
+          <div class="example-button-container">
+            <button mat-fab color="warn" aria-label="delete" (click)="deleteTour(item.id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

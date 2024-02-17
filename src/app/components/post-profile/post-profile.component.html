@@ -1,0 +1,23 @@
+<div class="box">
+    <h2>Create Profile</h2>
+    <br>
+    <form (submit)="profileData(userForm)" #userForm="ngForm">
+        <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Ex. John Doe" name="inputName" #inputName="ngModel" ngModel minlength="5" required />
+            <mat-error *ngIf="inputName.invalid">borobar kr</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Description</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..." name="inputContent" #inputContent="ngModel" ngModel
+                minlength="3">
+
+    </textarea>
+            <mat-error *ngIf="inputContent.invalid">borobar kr</mat-error>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="accent" type="submit" class="btn">Submit</button>
+    </form>
+</div>
+<app-list-profile ></app-list-profile>

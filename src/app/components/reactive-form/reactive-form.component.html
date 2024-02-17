@@ -1,0 +1,21 @@
+<div class="box">
+    <h2>Reactive Form</h2>
+    <br>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Ex. John Doe" name="firstName" formControlName="firstName" minlength="3"
+                required />
+            <mat-error *ngIf="">Please enter valid name</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Description</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..." name="description" formControlName="description"
+                minlength="3" required></textarea>
+            <mat-error *ngIf="">Please enter valid text</mat-error>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" type="submit" class="btn">Save</button>
+    </form>
+</div>

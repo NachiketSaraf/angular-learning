@@ -1,0 +1,15 @@
+.box {
+    background-color: #fee3fd;
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+mat-expansion-panel {
+    margin: 2px auto;
+    width: 75%;
+    border: 1px solid palevioletred;
+    border-radius: 10px;
+}
